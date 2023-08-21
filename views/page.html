@@ -1,0 +1,18 @@
+<%- include('header.html') -%>
+<div class="navi-links">
+    <h2><%= title %></h2>
+    <p class="title-desc"><%= desc %></p>
+    <ul>
+        <% links.forEach(function(links){ %>
+        <li>
+            <div class="ctn">
+                <a class="link" href="<%= links.link %>" title="📖 敖武的博客"><%= links.title %></a>
+                <div class="desc">
+                    <span class="text"><%= links.desc %></span>
+                </div>
+            </div>
+        </li>
+        <% }) %>
+    </ul>
+</div>
+<%- include('footer.html') -%>

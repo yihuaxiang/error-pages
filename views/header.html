@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= title %> | 敖武的博客</title>
+    <meta name="description" content="敖武的博客">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <% if (refresh) { %>
+    <meta http-equiv="refresh" content="5">
+    <%} else { %>
+    <% } %>
+    <style>
+        .ctn {
+            margin-right: 20px; display: flex;
+        }
+
+        .link {
+            flex-shrink: 0;
+        }
+
+        .desc {
+            padding-left: 5px; display: flex; align-items: center; font-size: 12px; color: rgba(0, 0, 0, 0.54); font-weight: 200; flex-shrink: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+
+        .desc .text {
+            overflow: hidden; text-overflow: ellipsis;
+        }
+        .title-desc {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.84);
+        }
+    </style>
+</head>
+
+<body>
