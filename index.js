@@ -77,6 +77,7 @@ const paths = [
 
 paths.forEach(path => {
     app.get(path.path, (req, res) => {
+        console.log('render page', path.path);
         res.render('page', {
             ...path,
             links: path.links,
