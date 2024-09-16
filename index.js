@@ -77,7 +77,10 @@ const paths = [
 
 paths.forEach(path => {
     app.get(path.path, (req, res) => {
-        console.log('render page', path.path);
+      const uri = req.get('suri');
+      const host = req.get('host');
+        console.log('render page',`http://${host}${uri || '/'}`, path.path);
+        console.log('headers', req.headers);
         res.render('page', {
             ...path,
             links: path.links,
